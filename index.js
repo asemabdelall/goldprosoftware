@@ -6,10 +6,10 @@ const app = express()
 app.use(cors())
 
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "goldpro_software",
+    host: "217.21.80.8",
+    user: "u664092895_goldprosoftwar",
+    password: "Gold.5599",
+    database: "u664092895_goldprosoftwar",
 })
 
 app.get('/fire', (re, res)=> {
