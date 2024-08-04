@@ -22,6 +22,7 @@ app.get('/hvac', (re, res)=> {
     const sql = "SELECT * FROM PRODUCTSS WHERE type = 'hvac'";
     db.query(sql, (err, data)=> {
         return res.json(data)
+        return ("dfgdfgdfgdfg")
     })
 })
 app.get('/scents', (re, res)=> {
