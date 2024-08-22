@@ -66,7 +66,12 @@ app.get('/ve', (re, res)=> {
         return res.json(data)
     })
 })
-
+app.get('/kit', (re, res)=> {
+    const sql = "SELECT * FROM PRODUCTSS WHERE type = 'kit'";
+    db.query(sql, (err, data)=> {
+        return res.json(data)
+    })
+})
 app.listen(8081, ()=>{
     console.log("listening::");
 })
