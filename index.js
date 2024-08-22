@@ -80,65 +80,7 @@ app.get('/elc', (req, res) => {
     });
 });
 
-app.get('/water', (req, res) => {
-    const sql = "SELECT * FROM productss WHERE type = 'water'";
-    db.query(sql, (err, data) => {
-        if (err) {
-            console.error('Error executing query: ', err);
-            return res.status(500).json({ error: err.message });
-        }
-        console.log('Data retrieved for /water: ', data);
-        return res.json(data);
-    });
-});
 
-app.get('/ro', (req, res) => {
-    const sql = "SELECT * FROM productss WHERE type = 'ro'";
-    db.query(sql, (err, data) => {
-        if (err) {
-            console.error('Error executing query: ', err);
-            return res.status(500).json({ error: err.message });
-        }
-        console.log('Data retrieved for /ro: ', data);
-        return res.json(data);
-    });
-});
-
-app.get('/kit', (req, res) => {
-    const sql = "SELECT * FROM productss WHERE type = 'kit'";
-    db.query(sql, (err, data) => {
-        if (err) {
-            console.error('Error executing query: ', err);
-            return res.status(500).json({ error: err.message });
-        }
-        console.log('Data retrieved for /kit: ', data);
-        return res.json(data);
-    });
-});
-
-app.get('/se', (req, res) => {
-    const sql = "SELECT * FROM productss WHERE type = 'se'";
-    db.query(sql, (err, data) => {
-        if (err) {
-            console.error('Error executing query: ', err);
-            return res.status(500).json({ error: err.message });
-        }
-        console.log('Data retrieved for /se: ', data);
-        return res.json(data);
-    });
-});
-
-app.get('/ve', (req, res) => {
-    const sql = "SELECT * FROM productss WHERE type = 've'";
-    db.query(sql, (err, data) => {
-        if (err) {
-            console.error('Error executing query: ', err);
-            return res.status(500).json({ error: err.message });
-        }
-        console.log('Data retrieved for /ve: ', data);
-        return res.json(data);
-    });
-});
 
 app.listen(8081, () => {
     console.log("Listening on port 8081");
