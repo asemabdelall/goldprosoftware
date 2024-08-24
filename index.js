@@ -7,9 +7,9 @@ app.use(cors());
 
 const db = mysql.createConnection({
     host: "srv676.hstgr.io",
-    user: "u664092895_goldprosoftware",
+    user: "u664092895_goldprosoftwar",
     password: "Gold.5599",
-    database: "u664092895_goldprosoftware",
+    database: "u664092895_goldprosoftwar",
 });
 
 db.connect(err => {
